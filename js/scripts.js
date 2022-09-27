@@ -54,7 +54,7 @@ function loadEventListeners(){
     //muestra desde localStorage
     document.addEventListener('DOMContentLoaded', ()=>{
         cart = JSON.parse(localStorage.getItem('cart') || []);
-        generateHTML();
+        generarHTML();
     })
     
     //click vaciar carrito
@@ -105,7 +105,7 @@ function deleteFromCart(e){
 
         updateCartAmountPill();
 
-        generateHTML();
+        generarHTML();
 
     }
 
@@ -145,11 +145,11 @@ function getProductData(productData){
     
     updateCartAmountPill();
 
-    generateHTML();
+    generarHTML();
 }
 
 //muestra en el html el producto seleccionado
-function generateHTML() {
+function generarHTML() {
     total = 0;    
 
     //limpia html
